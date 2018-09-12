@@ -46,8 +46,8 @@ sh -c "$(wget https://raw.githubusercontent.com/xqzhang2015/oh-my-zsh/master/too
 Append this to the tail of .bashrc
 
 ```shell
-export SHELL=/usr/bin/zsh
-exec /usr/bin/zsh --login
+export SHELL=$(which zsh)
+exec ${SHELL} --login
 ```
 
 ## Using Oh My Zsh
