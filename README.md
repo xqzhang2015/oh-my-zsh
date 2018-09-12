@@ -2,6 +2,45 @@
   <img src="https://s3.amazonaws.com/ohmyzsh/oh-my-zsh-logo.png" alt="Oh My Zsh">
 </p>
 
+<!-- MarkdownTOC -->
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Basic Installation](#basic-installation)
+    - [via curl](#via-curl)
+    - [via wget](#via-wget)
+    - [for user without sudo](#for-user-without-sudo)
+- [Using Oh My Zsh](#using-oh-my-zsh)
+  - [Plugins](#plugins)
+    - [Enabling Plugins](#enabling-plugins)
+    - [Using Plugins](#using-plugins)
+  - [Themes](#themes)
+    - [Selecting a Theme](#selecting-a-theme)
+- [Advanced Topics](#advanced-topics)
+  - [Advanced Installation](#advanced-installation)
+    - [Custom Directory](#custom-directory)
+    - [Manual Installation](#manual-installation)
+      - [1. Clone the repository:](#1-clone-the-repository)
+      - [2. *Optionally*, backup your existing `~/.zshrc` file:](#2-optionally-backup-your-existing-%7Ezshrc-file)
+      - [3. Create a new zsh configuration file](#3-create-a-new-zsh-configuration-file)
+      - [4. Change your default shell](#4-change-your-default-shell)
+      - [5. Initialize your new zsh configuration](#5-initialize-your-new-zsh-configuration)
+  - [Installation Problems](#installation-problems)
+  - [Custom Plugins and Themes](#custom-plugins-and-themes)
+- [Getting Updates](#getting-updates)
+  - [Manual Updates](#manual-updates)
+- [Uninstalling Oh My Zsh](#uninstalling-oh-my-zsh)
+- [Contributing](#contributing)
+  - [Do NOT send us themes](#do-not-send-us-themes)
+- [Contributors](#contributors)
+- [Follow Us](#follow-us)
+- [Merchandise](#merchandise)
+- [License](#license)
+- [About Planet Argon](#about-planet-argon)
+
+<!-- /MarkdownTOC -->
+
+
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/) configuration.
 
 Sounds boring. Let's try again.
