@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the “user@hostname” info when you’re logged in as yourself on your local machine.
-if [[ $(hostname) =~ "local" ]]; then
+myhostname=`echo $(hostname) | awk '{print tolower($0)}'`
+if [[ ${myhostname} =~ "mac" || ${myhostname} =~ "local" ]]; then
   DEFAULT_USER=$(whoami)
 fi
