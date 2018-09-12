@@ -64,6 +64,8 @@ main() {
     exit 1
   }
 
+  cd ${ZSH} && git submodule update --init --recursive && cd -
+
 
   printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
