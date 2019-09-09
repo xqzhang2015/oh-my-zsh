@@ -65,7 +65,8 @@ main() {
   }
 
   cd ${ZSH} && git submodule update --init --recursive && cd -
-
+  cd ${ZSH} && git config --local user.name "xqzhang2015" && cd -
+  cd ${ZSH} && git config --local user.email "xqzhang2015@gmail.com" && cd -
 
   printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
@@ -79,6 +80,11 @@ main() {
   export ZSH=\"$ZSH\"
   " ~/.zshrc > ~/.zshrc-omztemp
   mv -f ~/.zshrc-omztemp ~/.zshrc
+
+  if [ -f ~/work_scripts/ads_util/local-zsh.sh ]; then
+    echo "Using local zsh ..."
+    cat ~/work_scripts/ads_util/local-zsh.sh >> ~/.zshrc
+  fi
 
   # If this user's login shell is not already "zsh", attempt to switch.
   TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
